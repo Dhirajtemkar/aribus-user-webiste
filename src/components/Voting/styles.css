@@ -1,0 +1,104 @@
+.main {
+  display: flex;
+  flex-direction: row;
+  padding: 0.7em;
+}
+
+.left {
+  /* border: 1px solid black; */
+  flex: 0.65;
+  height: 100vh;
+}
+.right {
+  /* border: 1px solid black; */
+  flex: 0.35;
+}
+
+.searchDiv {
+  margin: 1em 1.5em;
+}
+.searchBtn {
+  margin: 1em;
+}
+/* list styles */
+.listMain {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  min-height: 7vh;
+  border-top: 2px solid rgba(158, 158, 158, 0.541);
+  margin: auto;
+  margin-bottom: 3em;
+}
+.voting {
+  margin: 1.5em 1em 1em 1em;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+}
+
+.votingBtnInside {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0.5em;
+  align-items: center;
+  justify-content: center;
+}
+.btnTag {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 1.5em 1em 1em 0;
+}
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: left;
+  /* border: 1px solid black; */
+  width: 100%;
+  margin-bottom: 0.7em;
+  /* margin-top: 0.5em; */
+}
+.description {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: justify;
+  margin-right: 2em;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.card {
+  background-color: rgba(182, 182, 182, 0.2);
+  margin: 0 1em;
+  padding: 1em;
+  border-radius: 5px;
+  position: fixed;
+}
+.suggestTitle {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+.suggestDes {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0.5em auto;
+  width: 75%;
+}
+.suggestionForm {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  /* margin: auto; */
+  margin: 2em auto;
+}
+.spaceDiv {
+  height: 1em;
+}

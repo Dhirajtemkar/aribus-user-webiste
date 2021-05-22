@@ -1,0 +1,84 @@
+/* .assitivetouch-menu-container {} */
+
+.menuball {
+    position: fixed;
+    width: 35px;
+    height: 35px;
+    background-color: rgba(80, 87, 156, 0.678);
+    z-index: 10000;
+    cursor: pointer;
+    top: 0px;
+    left: 0px;
+    border-radius: 30%;
+    padding: 6px;
+    touch-action: none;
+    cursor: grab;
+    border: 1px solid rgba(80, 87, 156, 0.678);
+    transition: transform 0.1s ease;
+}
+
+.menuball>div {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(80, 87, 156, 0.678);
+    pointer-events: none;
+}
+
+.assistivetouch-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    /* aligns on vertical for column */
+    align-items: left;
+    touch-action: none;
+}
+
+.assistivetouch-menu-content {
+    transform: scale(0);
+    width: 65px;
+    height: 550px;
+    background: rgb(0, 0, 0, 0);
+    border-radius: 25px;
+}
+
+.assistivetouch-menu-content.open {
+    transition: transform 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
+    background: rgba(52, 60, 138, 0.678);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: left;
+    align-items: left;
+}
+
+.assistivetouch-menu-item {
+    transition: transform 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
+    position: absolute;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    width: 10px;
+    height: 10px;
+    align-items: left;
+}
+
+.assistivetouch-menu-item>label {
+    color: white;
+    font-size: 10px;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+.icon-space {
+    
+    margin-top: 25px;
+}
+
+.fa-question {
+    color: white
+  }
